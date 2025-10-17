@@ -1,4 +1,4 @@
-import api from "@/lib/api";
+import { API } from "@/lib/api";
 import { useAuth } from "@/context/AuthContext";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
