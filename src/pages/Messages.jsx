@@ -15,10 +15,10 @@ import {
 } from "lucide-react";
 import { io } from "socket.io-client";
 
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { Badge } from "../components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Button } from "../components/button";
+import { Input } from "../components/input";
+import { Badge } from "../components/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,11 +26,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../components/ui/dropdown-menu";
-import { ScrollArea } from "../components/ui/scroll-area";
-import { Separator } from "../components/ui/separator";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../components/ui/tooltip";
-import { Skeleton } from "../components/ui/skeleton";
+} from "../components/dropdown-menu";
+import { ScrollArea } from "../components/scroll-area";
+import { Separator } from "../components/separator";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../components/tooltip";
+import { Skeleton } from "../components/skeleton";
 
 import api, { API } from "../lib/api";
 import { AuthContext } from "../context/AuthContext";
