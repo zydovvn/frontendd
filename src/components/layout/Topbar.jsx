@@ -11,6 +11,11 @@ import { API } from "@/lib/api";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Animations (vẫn giữ để sau này dùng nếu cần)
+export const API = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  withCredentials: true,
+});
+
 const sloganContainer = {
   initial: { opacity: 0, x: -40 },
   animate: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut", staggerChildren: 0.15 } },
