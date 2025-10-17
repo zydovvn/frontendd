@@ -1,4 +1,4 @@
-import { API } from "@/lib/api";
+import  API  from "@/lib/api";
 const ABS = /^https?:\/\//i;
 
 export function buildImg(raw) {
