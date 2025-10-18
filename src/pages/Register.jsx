@@ -26,7 +26,7 @@ export default function Register() {
     setError("");
 
     try {
-      const res = await api.post("http://localhost:5000/api/auth/register", {
+ const res = await api.post("http://localhost:5000/api/auth/register", {
         username,
         phone,
         email,
