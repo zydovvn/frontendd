@@ -43,7 +43,7 @@ import { buildImg } from "../utils/img";
    transports: ["websocket"],        // hoặc ["websocket","polling"]
    withCredentials: true,
    // (tuỳ chọn) gửi auth khi đã có user:
-    auth: { userId: user?.id },
+    // auth: { userId: user?.id },
  });
 
 /* ===================== Helpers ===================== */
