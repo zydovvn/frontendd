@@ -32,9 +32,19 @@ import { Separator } from "../components/separator";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../components/tooltip";
 import { Skeleton } from "../components/skeleton";
 
-import api, { API } from "../lib/api";
+
 import { AuthContext } from "../context/AuthContext";
 import { buildImg } from "../utils/img";
+
+ const SOCKET_URL = import.meta.env.VITE_API_URL; // ví dụ https://backend-xxxx.up.railway.app
+ // Nếu chat chạy namespace "/chat" trên server:
+ const socket = io(`${SOCKET_URL}/chat`, {
+   path: "/socket.io",
+   transports: ["websocket"],        // hoặc ["websocket","polling"]
+   withCredentials: true,
+   // (tuỳ chọn) gửi auth khi đã có user:
+    auth: { userId: user?.id },
+ });
 
 /* ===================== Helpers ===================== */
 
